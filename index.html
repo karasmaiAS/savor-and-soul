@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savor & Soul — Food Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Savor <span>&amp; Soul</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ A Passion for Flavors ✦</p>
+      <h1>Cook with Love,<br><em>Eat with Soul</em></h1>
+      <p>Discover recipes that bring people together — from quick weeknight dinners to weekend feasts crafted with heart and a whole lot of spice.</p>
+      <div class="hero-btns">
+        <a href="recipes.html" class="btn btn-primary">Explore Recipes</a>
+        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED RECIPES ===== -->
+  <section class="featured">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">✦ Fresh from the Kitchen ✦</p>
+        <h2>Featured Recipes</h2>
+        <p>Hand-picked favorites our readers can't stop making</p>
+      </div>
+
+      <div class="recipes-grid">
+
+        <div class="recipe-card">
+          <div class="recipe-card-img">
+            <img src="images/pasta.png" alt="Creamy Mushroom Tagliatelle" />
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-tag">Pasta</span>
+            <h3>Creamy Mushroom Tagliatelle</h3>
+            <p>Silky ribbons of pasta tossed with a rich mushroom cream sauce, finished with fresh parsley and a hint of truffle.</p>
+            <div class="recipe-meta">
+              <span>⏱ 30 mins</span>
+              <span>👥 2 servings</span>
+              <span>⭐ 4.9</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-card-img">
+            <img src="images/tacos.png" alt="Street-Style Beef Tacos" />
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-tag">Mexican</span>
+            <h3>Street-Style Beef Tacos</h3>
+            <p>Tender marinated beef, pickled jalapeños, cotija cheese, and smoky chipotle salsa piled on warm corn tortillas.</p>
+            <div class="recipe-meta">
+              <span>⏱ 45 mins</span>
+              <span>👥 4 servings</span>
+              <span>⭐ 5.0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-card-img">
+            <img src="images/bowl.png" alt="Mango Avocado Power Bowl" />
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-tag">Healthy</span>
+            <h3>Mango Avocado Power Bowl</h3>
+            <p>A vibrant bowl of brown rice, sliced mango, creamy avocado, edamame, and sesame-ginger dressing.</p>
+            <div class="recipe-meta">
+              <span>⏱ 15 mins</span>
+              <span>👥 1 serving</span>
+              <span>⭐ 4.8</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-card-img">
+            <img src="images/cheesecake.png" alt="Strawberry Basil Cheesecake" />
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-tag">Dessert</span>
+            <h3>Strawberry Basil Cheesecake</h3>
+            <p>Creamy New York-style cheesecake topped with a fresh strawberry-basil compote on a buttery graham cracker crust.</p>
+            <div class="recipe-meta">
+              <span>⏱ 3 hrs</span>
+              <span>👥 8 servings</span>
+              <span>⭐ 4.7</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-card-img">
+            <img src="images/ramen.png" alt="Tonkotsu Ramen" />
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-tag">Asian</span>
+            <h3>Tonkotsu Ramen from Scratch</h3>
+            <p>Rich pork bone broth simmered for 12 hours, served with chashu pork, soft-boiled eggs, and fresh noodles.</p>
+            <div class="recipe-meta">
+              <span>⏱ 12 hrs</span>
+              <span>👥 4 servings</span>
+              <span>⭐ 4.9</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-card-img">
+            <img src="images/pizza.png" alt="Margherita Neapolitan Pizza" />
+          </div>
+          <div class="recipe-card-body">
+            <span class="recipe-tag">Italian</span>
+            <h3>Margherita Neapolitan Pizza</h3>
+            <p>Hand-stretched dough baked in a blazing oven with San Marzano tomatoes, fresh mozzarella, and basil.</p>
+            <div class="recipe-meta">
+              <span>⏱ 2 hrs</span>
+              <span>👥 2 servings</span>
+              <span>⭐ 5.0</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /recipes-grid -->
+
+      <div style="text-align:center; margin-top:40px;">
+        <a href="recipes.html" class="btn btn-primary">View All Recipes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT STRIP with family image ===== -->
+  <section class="about-strip">
+    <div class="about-inner">
+      <div class="about-text">
+        <p class="section-label" style="color:var(--amber-light);">✦ Our Story ✦</p>
+        <h2>More Than a Recipe Blog</h2>
+        <p>Savor &amp; Soul was born from a simple belief: food tastes better when it's made with intention. We share stories, techniques, and flavors from around the world — because every meal is a journey.</p>
+        <a href="contact.html" class="btn btn-outline" style="margin-top:8px;">Say Hello</a>
+
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-num">120+</div>
+            <div class="stat-label">Recipes</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">40K</div>
+            <div class="stat-label">Monthly Readers</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">15</div>
+            <div class="stat-label">Countries</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">98%</div>
+            <div class="stat-label">5-Star Reviews</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-img-wrap">
+        <img src="images/hero-family.png" alt="Family cooking together" class="about-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>🌿 Join Our Kitchen Community</h2>
+      <p>Get a fresh recipe delivered to your inbox every week — no spam, just good food.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="abdul@email.com" aria-label="Email address" />
+        <button type="submit">Subscribe Free</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-logo">Savor &amp; Soul</div>
+    <p>© 2025 Savor &amp; Soul Food Blog. Made with ❤️ and a dash of spice.</p>
+    <p style="margin-top:8px;">
+      <a href="index.html">Home</a> &nbsp;·&nbsp;
+      <a href="recipes.html">Recipes</a> &nbsp;·&nbsp;
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipes — Savor &amp; Soul</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Savor <span>&amp; Soul</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero">
+    <h1>All Recipes 🍳</h1>
+    <p>Every dish, every craving — sorted and ready for you to explore.</p>
+  </div>
+
+  <!-- ===== FILTER BAR ===== -->
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <strong style="color:var(--brown); font-size:.85rem; margin-right:8px;">Filter:</strong>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pasta">Pasta</button>
+      <button class="filter-btn" data-filter="asian">Asian</button>
+      <button class="filter-btn" data-filter="healthy">Healthy</button>
+      <button class="filter-btn" data-filter="dessert">Dessert</button>
+      <button class="filter-btn" data-filter="mexican">Mexican</button>
+      <button class="filter-btn" data-filter="italian">Italian</button>
+    </div>
+  </div>
+
+  <!-- ===== RECIPE LIST ===== -->
+  <section style="background:var(--cream); padding:52px 24px;">
+    <div class="container">
+      <div style="display:flex; flex-direction:column; gap:24px;" id="recipeList">
+
+        <div class="recipe-detail-card" data-category="pasta">
+          <div class="recipe-detail-img">
+            <img src="images/pasta.png" alt="Creamy Mushroom Tagliatelle" />
+          </div>
+          <div class="recipe-detail-body">
+            <span class="recipe-tag">Pasta</span>
+            <h3>Creamy Mushroom Tagliatelle</h3>
+            <p>Silky ribbons of pasta tossed with a rich porcini mushroom cream sauce, finished with fresh parsley and a whisper of truffle oil. Pure weeknight luxury.</p>
+            <div class="recipe-detail-meta">
+              <span><strong>⏱ Prep:</strong> 10 mins</span>
+              <span><strong>🔥 Cook:</strong> 20 mins</span>
+              <span><strong>👥</strong> 2 servings</span>
+              <span><strong>📊</strong> Easy</span>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Vegetarian</span>
+              <span class="tag">Quick</span>
+              <span class="tag">Comfort Food</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-detail-card" data-category="mexican">
+          <div class="recipe-detail-img">
+            <img src="images/tacos.png" alt="Street-Style Beef Tacos" />
+          </div>
+          <div class="recipe-detail-body">
+            <span class="recipe-tag">Mexican</span>
+            <h3>Street-Style Beef Tacos</h3>
+            <p>Tender marinated carne asada, quick-pickled jalapeños, crumbled cotija, smoky chipotle salsa, and a squeeze of lime on warm corn tortillas. Addictive.</p>
+            <div class="recipe-detail-meta">
+              <span><strong>⏱ Prep:</strong> 20 mins</span>
+              <span><strong>🔥 Cook:</strong> 25 mins</span>
+              <span><strong>👥</strong> 4 servings</span>
+              <span><strong>📊</strong> Medium</span>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Beef</span>
+              <span class="tag">Spicy</span>
+              <span class="tag">Party</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-detail-card" data-category="healthy">
+          <div class="recipe-detail-img">
+            <img src="images/bowl.png" alt="Mango Avocado Power Bowl" />
+          </div>
+          <div class="recipe-detail-body">
+            <span class="recipe-tag">Healthy</span>
+            <h3>Mango Avocado Power Bowl</h3>
+            <p>A vibrant grain bowl with nutty brown rice, tropical mango slices, creamy avocado, edamame, shredded carrots, and a bold sesame-ginger dressing.</p>
+            <div class="recipe-detail-meta">
+              <span><strong>⏱ Prep:</strong> 15 mins</span>
+              <span><strong>🔥 Cook:</strong> 0 mins</span>
+              <span><strong>👥</strong> 1 serving</span>
+              <span><strong>📊</strong> Easy</span>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Vegan</span>
+              <span class="tag">Gluten-Free</span>
+              <span class="tag">No-Cook</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-detail-card" data-category="dessert">
+          <div class="recipe-detail-img">
+            <img src="images/cheesecake.png" alt="Strawberry Basil Cheesecake" />
+          </div>
+          <div class="recipe-detail-body">
+            <span class="recipe-tag">Dessert</span>
+            <h3>Strawberry Basil Cheesecake</h3>
+            <p>Classic New York cheesecake with a buttery graham cracker crust, topped with a luscious strawberry-basil compote. The basil is the secret weapon.</p>
+            <div class="recipe-detail-meta">
+              <span><strong>⏱ Prep:</strong> 30 mins</span>
+              <span><strong>🔥 Cook:</strong> 60 mins</span>
+              <span><strong>👥</strong> 8 servings</span>
+              <span><strong>📊</strong> Advanced</span>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Baking</span>
+              <span class="tag">Special Occasion</span>
+              <span class="tag">Vegetarian</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-detail-card" data-category="asian">
+          <div class="recipe-detail-img">
+            <img src="images/ramen.png" alt="Tonkotsu Ramen" />
+          </div>
+          <div class="recipe-detail-body">
+            <span class="recipe-tag">Asian</span>
+            <h3>Tonkotsu Ramen from Scratch</h3>
+            <p>A labor of love — rich, milky pork bone broth simmered for 12 hours, topped with chashu pork belly, a soy-marinated soft-boiled egg, nori, and scallions.</p>
+            <div class="recipe-detail-meta">
+              <span><strong>⏱ Prep:</strong> 45 mins</span>
+              <span><strong>🔥 Cook:</strong> 12 hrs</span>
+              <span><strong>👥</strong> 4 servings</span>
+              <span><strong>📊</strong> Advanced</span>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Pork</span>
+              <span class="tag">Japanese</span>
+              <span class="tag">Weekend Project</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-detail-card" data-category="italian">
+          <div class="recipe-detail-img">
+            <img src="images/pizza.png" alt="Margherita Neapolitan Pizza" />
+          </div>
+          <div class="recipe-detail-body">
+            <span class="recipe-tag">Italian</span>
+            <h3>Margherita Neapolitan Pizza</h3>
+            <p>Hand-stretched 72-hour cold-fermented dough baked at maximum heat with San Marzano tomatoes, torn fresh mozzarella di bufala, and fragrant basil.</p>
+            <div class="recipe-detail-meta">
+              <span><strong>⏱ Prep:</strong> 72 hrs</span>
+              <span><strong>🔥 Cook:</strong> 8 mins</span>
+              <span><strong>👥</strong> 2 servings</span>
+              <span><strong>📊</strong> Medium</span>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Vegetarian</span>
+              <span class="tag">Baking</span>
+              <span class="tag">Italian</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-detail-card" data-category="healthy">
+          <div class="recipe-detail-img">
+            <img src="images/soup.png" alt="Golden Turmeric Chicken Soup" />
+          </div>
+          <div class="recipe-detail-body">
+            <span class="recipe-tag">Healthy</span>
+            <h3>Golden Turmeric Chicken Soup</h3>
+            <p>Anti-inflammatory and deeply comforting — a golden broth infused with fresh turmeric, ginger, garlic, lemon, and shredded chicken with rice noodles.</p>
+            <div class="recipe-detail-meta">
+              <span><strong>⏱ Prep:</strong> 15 mins</span>
+              <span><strong>🔥 Cook:</strong> 40 mins</span>
+              <span><strong>👥</strong> 6 servings</span>
+              <span><strong>📊</strong> Easy</span>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Chicken</span>
+              <span class="tag">Gluten-Free</span>
+              <span class="tag">Soup</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-detail-card" data-category="dessert">
+          <div class="recipe-detail-img">
+            <img src="images/creme-brulee.png" alt="Salted Caramel Crème Brûlée" />
+          </div>
+          <div class="recipe-detail-body">
+            <span class="recipe-tag">Dessert</span>
+            <h3>Salted Caramel Crème Brûlée</h3>
+            <p>Silky vanilla custard with a salted caramel twist, crowned with a perfectly crackly burnt-sugar crust. Sophistication in six ingredients.</p>
+            <div class="recipe-detail-meta">
+              <span><strong>⏱ Prep:</strong> 20 mins</span>
+              <span><strong>🔥 Cook:</strong> 45 mins</span>
+              <span><strong>👥</strong> 4 servings</span>
+              <span><strong>📊</strong> Medium</span>
+            </div>
+            <div class="tag-list">
+              <span class="tag">French</span>
+              <span class="tag">Special Occasion</span>
+              <span class="tag">Vegetarian</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /recipeList -->
+    </div>
+  </section>
+
+  <!-- ===== RATING WIDGET ===== -->
+  <section style="background:var(--warm-white); padding:52px 24px;">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">✦ Your Voice Matters ✦</p>
+        <h2>Rate Your Favorite Recipe</h2>
+        <p>Let us know how we're doing in the kitchen!</p>
+      </div>
+      <div class="rating-widget">
+        <h4>How would you rate Savor &amp; Soul?</h4>
+        <div class="star-rating">
+          <button class="star-btn" aria-label="1 star">⭐</button>
+          <button class="star-btn" aria-label="2 stars">⭐</button>
+          <button class="star-btn" aria-label="3 stars">⭐</button>
+          <button class="star-btn" aria-label="4 stars">⭐</button>
+          <button class="star-btn" aria-label="5 stars">⭐</button>
+        </div>
+        <p class="rating-result" id="ratingResult">Click a star to rate!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>🌿 Never Miss a Recipe</h2>
+      <p>Weekly recipes, seasonal tips, and kitchen stories — straight to your inbox.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="your@email.com" aria-label="Email address" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-logo">Savor &amp; Soul</div>
+    <p>© 2025 Savor &amp; Soul Food Blog. Made with ❤️ and a dash of spice.</p>
+    <p style="margin-top:8px;">
+      <a href="index.html">Home</a> &nbsp;·&nbsp;
+      <a href="recipes.html">Recipes</a> &nbsp;·&nbsp;
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

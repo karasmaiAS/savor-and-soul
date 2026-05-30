@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Savor &amp; Soul</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Savor <span>&amp; Soul</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero">
+    <h1>Say Hello 👋</h1>
+    <p>Questions, recipe requests, collaborations — we'd love to hear from you.</p>
+  </div>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info Column -->
+        <div class="contact-info">
+          <h3>Let's Talk Food</h3>
+          <p>Whether you tried one of our recipes and want to share your experience, have a collaboration idea, or just want to say hi — drop us a message and we'll get back to you within 24 hours.</p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@savorandsoul.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Based In</h4>
+              <p>Manila, Philippines 🇵🇭</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📸</div>
+            <div>
+              <h4>Instagram</h4>
+              <p>@savorandsoul</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">⏰</div>
+            <div>
+              <h4>Response Time</h4>
+              <p>Within 24 hours on weekdays</p>
+            </div>
+          </div>
+
+          <div style="margin-top:32px; padding:24px; background:linear-gradient(135deg,#fff3e0,#ffe0b2); border-radius:16px; border:1px solid #e8d8c0;">
+            <p style="font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--brown); font-style:italic; margin:0; line-height:1.6;">
+              "Food is the ingredient that binds us together. Every message we receive is a reminder of why we cook."
+            </p>
+            <p style="font-size:.85rem; color:var(--text-light); margin-top:10px;">— The Savor &amp; Soul Team</p>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="form-card">
+          <h3>Send a Message</h3>
+
+          <form id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" placeholder="Juan" />
+                <span class="error-msg" id="firstNameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" placeholder="dela Cruz" />
+                <span class="error-msg" id="lastNameError"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" placeholder="juan@email.com" />
+              <span class="error-msg" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject">
+                <option value="default">— Choose a topic —</option>
+                <option value="recipe">Recipe Question</option>
+                <option value="collaboration">Collaboration / Sponsorship</option>
+                <option value="feedback">Blog Feedback</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="error-msg" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" rows="5" placeholder="Tell us what's on your mind..."></textarea>
+              <span class="error-msg" id="messageError"></span>
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="agreeCheck" />
+              <label for="agreeCheck">I agree to receive occasional emails from Savor &amp; Soul (no spam, ever!)</label>
+            </div>
+            <span class="error-msg" id="agreeError" style="margin-top:-12px; margin-bottom:12px;">Please check this box to continue.</span>
+
+            <button type="submit" class="btn-submit">✉️ Send Message</button>
+
+            <div class="success-msg" id="formSuccess">
+              <h4>🎉 Message Received!</h4>
+              <p>Thanks for reaching out. We'll get back to you within 24 hours!</p>
+            </div>
+
+          </form>
+        </div>
+
+      </div><!-- /contact-grid -->
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section style="background:var(--warm-white); padding:52px 24px;">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">✦ Common Questions ✦</p>
+        <h2>FAQ</h2>
+      </div>
+
+      <div style="max-width:720px; margin:0 auto; display:flex; flex-direction:column; gap:16px;">
+
+        <details style="background:#fff; border:1px solid var(--border); border-radius:12px; padding:20px 24px;">
+          <summary style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--brown); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            Can I submit my own recipe to the blog? <span>＋</span>
+          </summary>
+          <p style="margin-top:12px; color:var(--text-light); font-size:.95rem; line-height:1.8;">Absolutely! We love featuring community recipes. Use the contact form above and select "Other" as the subject. Include your recipe name and a brief description.</p>
+        </details>
+
+        <details style="background:#fff; border:1px solid var(--border); border-radius:12px; padding:20px 24px;">
+          <summary style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--brown); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            Do you work with food brands and sponsors? <span>＋</span>
+          </summary>
+          <p style="margin-top:12px; color:var(--text-light); font-size:.95rem; line-height:1.8;">Yes! We're open to brand collaborations that align with our values of quality, sustainability, and real food. Reach out via the form with "Collaboration" selected.</p>
+        </details>
+
+        <details style="background:#fff; border:1px solid var(--border); border-radius:12px; padding:20px 24px;">
+          <summary style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--brown); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            Can I repost or share a recipe from the blog? <span>＋</span>
+          </summary>
+          <p style="margin-top:12px; color:var(--text-light); font-size:.95rem; line-height:1.8;">You're welcome to share any recipe with credit and a link back to Savor &amp; Soul. Please don't reproduce full recipes without permission.</p>
+        </details>
+
+        <details style="background:#fff; border:1px solid var(--border); border-radius:12px; padding:20px 24px;">
+          <summary style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--brown); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            How often are new recipes published? <span>＋</span>
+          </summary>
+          <p style="margin-top:12px; color:var(--text-light); font-size:.95rem; line-height:1.8;">We publish 2–3 new recipes every week. Subscribe to our newsletter to never miss a new post!</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-logo">Savor &amp; Soul</div>
+    <p>© 2025 Savor &amp; Soul Food Blog. Made with ❤️ and a dash of spice.</p>
+    <p style="margin-top:8px;">
+      <a href="index.html">Home</a> &nbsp;·&nbsp;
+      <a href="recipes.html">Recipes</a> &nbsp;·&nbsp;
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
